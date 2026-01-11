@@ -1,0 +1,64 @@
+/* CSS Document */
+/* Hero：整張圖當背景 */
+.hero {
+  position: relative;
+  min-height: 320px;                  /* 視覺高度 */
+  padding: 60px 20px;                 /* 內距避免文字貼邊 */
+  border-radius: 0px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  background-image: 
+    linear-gradient(                  /* 上方淡淡的漸層做遮罩，讓字清楚 */
+      rgba(0,0,0,0.25), 
+      rgba(0,0,0,0.25)
+    ),
+    url("images/Banner.jpg");                  /* ← 換成你的圖片檔名 */
+  background-size: cover;             /* 充滿區塊、不變形 */
+  background-position: center;        /* 居中對齊 */
+  color: #fff;                        /* 讓文字變白 */
+  display: flex;                      /* 置中內容 */
+  align-items: center;                /* 垂直置中 */
+  justify-content: center;            /* 水平置中 */
+  text-align: center;                 /* 文字置中 */
+}
+
+/* 文字容器（可加一點陰影提升可讀性） */
+.info-table { 
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.info-table th,
+.info-table td{
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.info-table th {
+  background-color: #f2f2f2;
+  width: 30%;
+  text-align: match-parent;
+}
+.event-info {
+  display: flex;
+  gap: 40px;
+  padding: 40px 80px;
+  background: #f9f9f9;
+}
+
+.info-box {
+  flex: 1;
+}
+
+.info-box h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+  font-size: 14px;
+}
+
